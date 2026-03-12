@@ -29,6 +29,8 @@ public class Main {
         }
         fila.imprime();
 
+// ===================================================================================
+
         // Exemplo 2
         Queue<String> waitingQueue = new LinkedList<>();
 
@@ -58,6 +60,8 @@ public class Main {
 
         firstPersonInTheWaitingQueue = waitingQueue.peek();
         System.out.println("Primeira pessoa da fila: " + firstPersonInTheWaitingQueue);
+
+// ===================================================================================
 
         // Exemplo 3
         Queue<String> fila_de_espera = new LinkedList<>();
@@ -89,15 +93,17 @@ public class Main {
         });
 
         System.out.println("\n=== Iterações sobre uma Fila usando loop for-each ===");
-        for (String name3 : fila_de_espera) {
-            System.out.println(name);
+        for(String name3: fila_de_espera) {
+            System.out.println(name3);
         }
+
+// ===================================================================================
 
         // Exemplo 4
         Queue<Integer> fila4 = new LinkedList<>();
 
         // Adiciona os elementos {0, 1, 2, 3, 4} na fila
-        for (int i = 0; i < 5; i++)
+        for (int i=0; i<5; i++)
             fila4.add(i);
 
         // Mostra o conteúdo da fila.
